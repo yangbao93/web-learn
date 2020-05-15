@@ -1,0 +1,27 @@
+.top{
+    position: relative;
+    float: right;
+    background-color: grey;
+    width: 100%;
+}
+.topdiv{
+    position: relative;
+    float: right;
+}
+.leftdiv{
+    position: relative;
+    float: left;
+}
+.right{
+    position: relative;
+    float: right;
+    border-color: goldenrod;
+    width: 60%;
+}
+.searchButton{
+    background-color: green;
+}
+.resetButton{
+    border: hidden;
+    border-color: indigo;
+}
