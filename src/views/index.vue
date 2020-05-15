@@ -73,7 +73,7 @@ import axios from "axios";
 export default {
   methods: {
     alterUserMsg() {
-      alter("1");
+      alert("1");
     },
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
@@ -90,7 +90,9 @@ export default {
           address: "上海市普陀区金沙江路 1519 弄"
         }
       ];
-      alter("您输入了：" + inputTxt);
+      if (this.inputTxt != "") {
+        alert("您输入了：" + this.inputTxt);
+      }
       //   axios
       //     .get("http://www.baidu.com")
       //     .then(resp => {
@@ -102,7 +104,7 @@ export default {
       //     });
       axios({
         type: "GET",
-        url: "www.baidu.com",
+        url: "http://www.baidu.com",
         success: function(data) {
           console.log(data);
           alert("get from baidu");
@@ -148,6 +150,7 @@ export default {
       selectValue: "",
       inputTxt: ""
     };
-  }
+  },
+  beforeCreate
 };
 </script>
