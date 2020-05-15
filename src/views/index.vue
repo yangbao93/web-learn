@@ -151,6 +151,6 @@ export default {
       inputTxt: ""
     };
   },
-  beforeCreate
+  // beforeCreate
 };
 </script>
