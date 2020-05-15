@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>  
+    <head> 
+        <script src=""></script>
         <!-- 引入样式 -->
         <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
         <!-- 引入组件库 -->
@@ -15,13 +16,7 @@
         </div>
         <div id="left_" class="leftdiv">22</div>
         <div id="table_cont"  class="rightdiv">333
-            <template>
-                <el-table :data="tableData" height="250" border style="width: 100%">
-                    <el-table-column prop="date" label="日期" width="180"></el-table-column>
-                    <el-table-column prop="name" label="姓名" width="180"></el-table-column>
-                    <el-table-column prop="address" label="地址"></el-table-column>
-                </el-table>
-            </template>
+            
         </div>
     </body>
 </html>
